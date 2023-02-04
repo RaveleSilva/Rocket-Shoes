@@ -29,6 +29,10 @@ header{
     column-gap: 2rem;
 }
 
+header > .menu-hamburger{
+    display: none;
+}
+
 nav ul{
     display: flex;
     list-style: none;
@@ -98,7 +102,7 @@ nav li:hover{
     flex-direction: column;
     justify-content: center;
     gap: 1.3125rem;
-    padding: 0 2rem;
+    padding: 0 5vw;
 }
 
 .text h1{
@@ -247,7 +251,7 @@ footer button{
     }
 
     .left{
-        padding-bottom: 3rem;
+        padding-bottom: 1.5rem;
         padding-top: 8rem;
         justify-content: flex-start;
     }
@@ -308,11 +312,20 @@ footer button{
 
     .right{
         column-gap: 1rem;
+        padding: 1rem 1.25rem;
     }
 }
 
 @media (max-width: 500px){
     .search{
+        display: none;
+    }
+
+    header > .menu-hamburger{
+        display: flex;
+    }
+
+    .bag > .menu-hamburger{
         display: none;
     }
     
@@ -329,14 +342,22 @@ footer button{
         font-size: 1.5rem;
     }
 
+    .right{
+        column-gap: 0.5rem;
+    }
+
     .social-icons ul{
-        gap: 1.5rem;
+        gap: 3rem;
     }
 }
 
 @media (max-width: 420px){
     .text h1{
         font-size: 2.5rem;
+    }
+
+    .social-icons ul{
+        gap: 1.8rem;
     }
 }
 
